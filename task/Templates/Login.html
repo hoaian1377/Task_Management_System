@@ -7,51 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Form</title>
 </head>
-<body style="background-image: url({% static 'task/image/login_backgroud.png' %});">       
-<style>
-.login_container
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    background-color: rgba(255, 255, 255, 0.9); /* nền trắng mờ */
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-}
-.login_container input {
-    margin: 8px 0;
-    padding: 10px;
-    width: 250px;
-}
-
-.button_login button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 4px;
-}
-body
-{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-size: cover;
-    background-position: center;
-}
-@media (max-width: 480px) {
-    .login_container {
-        padding: 20px;
-    }
-}
-</style>
+<body style="background-image: url({% static 'task/image/login_backgroud.png' %});">
     <div class= "login_container">
         <h2>Login</h2>
         <!--form user-->
@@ -72,7 +28,7 @@ body
         </div>
         <!--nut dang nhap-->
         <div class="button_login">
-            <button>Login</button>
+            <button><a href="{% url 'task' %}">Login</a></button>
         </div>
     </div>
 </body>
